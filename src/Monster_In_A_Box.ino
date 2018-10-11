@@ -12,8 +12,8 @@ https://learn.adafruit.com/adafruit-wave-shield-audio-shield-for-arduino/faq
 */
 #include "MonsterSounds.h"
 
-#define RED_LEDS    7   // Connect Digital Pin on Arduino to Relay Module
 #define FOG_MACHINE 6   // Connect Digital Pin on Arduino to Relay Module
+#define RED_LEDS    7   // Connect Digital Pin on Arduino to Relay Module
 #define LID_BOUNCER 8   // Connect Digital Pin on Arduino to Relay Module
 #define UNUSED      9   // Connect Digital Pin on Arduino to Relay Module
 
