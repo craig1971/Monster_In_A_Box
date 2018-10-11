@@ -1,9 +1,20 @@
 
+/*
+Wave Shield Pins in Use: 2, 3, 4, 5, 10, 11, 12 & 13
+Pins 13, 12, 11 are always used by the SD card (they are the only pins that have a high speed SPI interface). 
+Then there are 5 other pins used to talk to the DAC and SD card, but they can be set to connect to any arduino pin. 
+However, by default, the library is configured to use pins 10 (for SD card) and pins 2, 3, 4 and 5 for the DAC. 
+To chanage these pins requires modifying the library - the pins are referenced by their 'hardware' pin names (ie PORTD, etc) 
+not by arduino pins. 
+
+That means pins 6, 7, 8, 9 and the 6 analog in pins (also known as digital i/o pins 14-20) are available.
+https://learn.adafruit.com/adafruit-wave-shield-audio-shield-for-arduino/faq
+*/
 #include "MonsterSounds.h"
 
-#define LID_BOUNCER 8   // Connect Digital Pin on Arduino to Relay Module
 #define RED_LEDS    7   // Connect Digital Pin on Arduino to Relay Module
 #define FOG_MACHINE 6   // Connect Digital Pin on Arduino to Relay Module
+#define LID_BOUNCER 8   // Connect Digital Pin on Arduino to Relay Module
 #define UNUSED      9   // Connect Digital Pin on Arduino to Relay Module
 
 #define PIR_SENSOR      A0
