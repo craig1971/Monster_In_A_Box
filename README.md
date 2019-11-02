@@ -7,7 +7,7 @@ Full Build Instructions are Here:
 https://www.hackster.io/craig-jameson/monster-in-a-box-41cc38
 
 
-<img src="./images/image_0.jpg" height=300><img src="./images/image_1.jpg" height=300><br>
+<img src="./images/image_0.jpg" height=250><img src="./images/image_1.jpg" height=250><br>
 
 
 ### Wiring Diagram
