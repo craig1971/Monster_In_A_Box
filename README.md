@@ -9,6 +9,7 @@ https://www.hackster.io/craig-jameson/monster-in-a-box-41cc38
 
 <img src="./images/image_0.jpg" height=250><img src="./images/image_1.jpg" height=250><br>
 
+Checkout a video of the box on Halloween night [HERE] (https://www.youtube.com/watch?v=Fk9QA6AY-tw)
 
 ### Wiring Diagram
 
