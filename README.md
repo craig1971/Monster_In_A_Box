@@ -1,3 +1,30 @@
+## Ver 4.0 Changes
+
+Total rewrite of main sketch code
+ 
+Main loop is now implemented as a state machine
+
+All timing now based on event time vs. current time evaluations 
+   - timing is no longer dependent on frames
+   - allowed removal of delay() in main loop
+   - eliminates the 'port busy' issue when connecting to Arduino IDE
+    
+Relays now using Normally Open rather than Normally Closed connections
+
+Added Motion Detected LED
+
+Added Ready to Wake LED
+
+Added Paused LED
+
+Removed Action Trigger Switch
+
+Added abillity to add extra time to Red Lights & Smoke
+   - allows these effects to run a bit longer than the lid bouncer
+Added lots of comments
+
+
+
 # Monster In A Box
 Arduino based controller for a Monster In A Box Halloween prop.
 
