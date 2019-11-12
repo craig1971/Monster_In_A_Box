@@ -298,12 +298,12 @@ inline void bounceLid(unsigned long duration)
 {
   if (duration <= 0) 
   {
-    closeRelay(LID_BOUNCER);
+    energizeRelay(LID_BOUNCER);
     lidBounceDuration = 0;
     
   } else {
     // start the lid bouncing
-    openRelay(LID_BOUNCER);
+    de_energizeRelay(LID_BOUNCER);
     lidBounceTimer = millis();
     lidBounceDuration = duration;
   }
@@ -318,12 +318,12 @@ inline void flashRedLight(unsigned long duration)
 {
   if (duration <= 0) 
   {
-    closeRelay(RED_LEDS);
+    energizeRelay(RED_LEDS);
     redLightDuration = 0;
     
   } else {
     // start the light flashing
-    openRelay(RED_LEDS);
+    de_energizeRelay(RED_LEDS);
     redLightTimer = millis();
     redLightDuration = duration;
   }
@@ -343,12 +343,12 @@ inline void flashRedLight(unsigned long duration)
   
   if (duration <= 0) 
   {
-    closeRelay(FOG_MACHINE);
+    energizeRelay(FOG_MACHINE);
     smokeDuration = 0;
     
   } else {
     // start the light flashing
-    openRelay(FOG_MACHINE);
+    de_energizeRelay(FOG_MACHINE);
     smokeTimer = millis();
     smokeDuration = duration;
   }
@@ -386,19 +386,21 @@ inline void printTimersToLog() {
 
 
 /* 
+ *  Energize Relay
  *  Sets the Normally Open (NO) terminal to OPEN
  *  Normally Closed will become Closed
  */
- inline void openRelay(int channel)
+ inline void energizeRelay(int channel)
  {
   digitalWrite(channel, HIGH);
  }
 
 /* 
- *  Sets the Normally Open (NO) terminal to Closed.
+ *  De-Energize Relay
+ *  Sets the Normally Open (NO) terminal to CLOSED.
  *  Normally Closed will become OPEN
  */
- inline void closeRelay(int channel)
+ inline void de_energizeRelay(int channel)
  {
   digitalWrite(channel, LOW);
  }
