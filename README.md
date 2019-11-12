@@ -1,3 +1,13 @@
+## Ver 4.1 Changes
+
+Modified relays to use Normally Open (NO) positions
+
+Updated sound effects
+   - Roar sounds now have rattling chain sounds added
+   - Start up sound is now a monster sounds (no longer uses AOL "welcome")
+   - Old sounds are in subfolders in the zip
+
+
 ## Ver 4.0 Changes
 
 Total rewrite of main sketch code
